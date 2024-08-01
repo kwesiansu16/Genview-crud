@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    
+         <h2>Registration List</h2>
+         <hr/>
+         <ul>
+            {% for object in object_list %}
+            <li>First Name: {{object.fname}}</li>
+            <li>Last Name: {{object.lname}}</li>
+            <li>City: {{object.city}}</li>
+            <li>Email: {{object.email}}</li>
+<hr/>
+         </ul>
+         {% endfor %}
+ 
+        
+        <script src="" async defer></script>
+    </body>
+</html>
